@@ -86,6 +86,15 @@ header .header-right a {
   text-shadow: 0 0 5px #5c005c;
 }
 
+.about-photo {
+  display: block;
+  max-width: 180px; /* adjust size */
+  border-radius: 100px; 
+  margin: 0 auto 1rem auto; /* center and add space below */
+  border: 3px solid #ff4de6; /*Hot pink color*/
+  box-shadow: 0 0 15px rgba(255, 77, 230, 0.6);
+}
+
 .about-container {
   display: flex;
   gap: 20px;
@@ -162,7 +171,6 @@ header .header-right a {
     flex-direction: column;
   }
 }
-
 
 nav a {
   color: #8d177d;
@@ -471,9 +479,6 @@ header, .site-header {
 .project-card:hover .project-thumb img{ 
   transform: scale(1.03); 
 }
-
-
-
 /*contact sections*/
 /* Push the Contact section down & stop under fixed header when linked */
 #contact {
@@ -612,18 +617,6 @@ header, .site-header {
   color: #ffffff;               /* your hot pink */
   font-family: 'Oxanium', sans-serif;
   font-size: .9rem;
-}
-
-
-
-
-.about-photo {
-  display: block;
-  max-width: 180px; /* adjust size */
-  border-radius: 100px; /* or 50% if you want it circular */
-  margin: 0 auto 1rem auto; /* center and add space below */
-  border: 3px solid #ff4de6; /*Hot pink color*/
-  box-shadow: 0 0 15px rgba(255, 77, 230, 0.6);
 }
 
 
