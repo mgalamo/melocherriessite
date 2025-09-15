@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Site</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="thesitestyle.css" />
+  </head>
+
+  <body>
+  
+  <!-- Vanta background container (behind everything) -->
+  <div id="vanta-bg" class="vanta-bg" aria-hidden="true"></div>
+
+  <header>
+    <div class="site-header">
+      <h1 class="site-name">Melodie<br>Galamo</h1>
+
+      <div class="header-center">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="Melodie Galamo's Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+
+      <!-- social icons -->
+      <div class="socials">
+        <a href="https://github.com/mgalamo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/melodie-galamo" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/melodiega" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:melodiegalamo@outlook.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <!-- removed stray </nav> -->
+  </header>
+
+  <section class="hero" id="top">
+    <h2 class="welcome-text">Welcome to my digital portfolio!</h2>
+    <img src="IMG_2014.jpg" alt="My portrait" class="hero-image">
+    <h2><span class="flasher"></span></h2>
+    <p class="hero-subtext">
+      On a mission to merge data science, creativity, <br>
+      and innovation to solve real-world problems.
+    </p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <div class="about-container">
+      <!-- Left: text -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <img src="IMG_2023.JPG" alt="Melodie Galamo" class="about-photo">
+        <p>
+          Hi! I'm Melodie, a Cameroonian-American undergraduate majoring in Computer Science with a minor in French Studies. 
+          I'm passionate about data science and aspire to build a career as a data analyst or researcher. I'm also interested 
+          in merging technology with creativity and interdisciplinary collaboration, particularly where code meets design, insight, and innovation. 
+          Beyond academics, I bring creativity, discipline, and a diverse range of skills to everything I’m passionate about and dedicated to. 
+          Thank you for visiting my website! I hope you enjoy exploring my work, rooted in passion, driven by ideas, and guided by creativity.
+        </p>
+      </div>
+
+      <!-- Right: sidebar -->
+      <div class="about-sidebar">
+        <div class="info-box animate" style="--delay:0ms;">
+          <h3>Experience<br><i class="fas fa-briefcase"></i></h3>
+          <p>Intern at BETA Systems International - '24 <br><br>
+            Store Consultant at FedEx Office - '19
+          </p>
+        </div>
+
+        <div class="info-box animate" style="--delay:120ms;">
+          <h3>Programming Skills<br><i class="fas fa-code"></i></h3>
+          <p>Python, Javascript, Java, SQL, HTML, C, C++, AWS, Microsoft Office, OCaml, Rust</p>
+        </div>
+
+        <div class="info-box animate" style="--delay:240ms;">
+          <h3>Education<br><i class="fas fa-graduation-cap"></i></h3>
+          <p>
+            B.S. Computer Science, University of Maryland — ’26<br><br>
+            A.A. Computer Science & Technologies, Montgomery College — ’23
+          </p>
+        </div>
+      </div>
+    </div> <!-- CLOSE .about-container -->
+  </section>
+
+  <!-- Projects -->
+  <!-- Projects -->
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="projects-carousel" id="projects-carousel" tabindex="0">
+    <button class="carousel-btn prev" aria-label="Previous projects">‹</button>
+
+    <div class="carousel-viewport">
+      <div class="carousel-track">
+
+        <a class="project-card" href="https://devpost.com/software/evaluating-impact-of-de-identification-on-behavioral-data" target="_blank" rel="noopener">
+         <div class="project-thumb">
+            <h3>Technica Research</h3>
+            <img src="Data Visualization Picture.png" alt="Website Projects Preview">
+          </div>
+          <p>A group collaboration done at Technica Hackathon 2024 at the University of Maryland, 
+            we used data anonymization to mask as much participant information as possible from a behavioral 
+            study in Liberia. We compared several de-identification workflows and used data visualization to 
+            track risk–utility and confirm consistency across tools.<br><br><br> Tech: ARX, R, R Studio, sdcMicro</p>
+        </a>
+
+         <a class="project-card" href="https://github.com/mgalamo" target="_blank" rel="noopener">
+          <div class="project-thumb">
+            <h3>Portfolio Website</h3>
+            <img src="Personal Portfolio Picture.png" alt="Personal portfolio website preview">
+          </div>
+          <p>Designed a personal portfolio to present my work, compatible across a variety of devices.
+            It uses a few hosted services for typography, background effects, and image optimization. The 
+            porfolio features an organized layout and a consistent color system. It includes a brief intro 
+            and project summaries about my work as a computer scientist, with links to social profiles and 
+            more details on the ideas.
+            <br><br>Tech: HTML, CSS, JavaScript</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/mgalamo/Beauty-Supply-Concept-Data-Science-Model" target="_blank" rel="noopener">
+          <div class="project-thumb">
+            <h3>Beauty Shop Model</h3>
+            <img src="Beauty Supply Picture.png" alt="Beauty shop model preview">
+          </div>
+          <p>Developed a data-driven plan for a prospective beauty supply store near the University of Maryland by
+            analyzing foot-traffic and revenue patterns to assess viability. It identified peak shopping times and 
+            clear interest in specialized hair care, which guided plans for location, inventory, merchandising, promotions, 
+            and an in-store room-rental model for appointments.
+            <br><br>Tech: Python, PowerBI, Tableau</p>
+        </a>
+    
+       <a class="project-card" href="https://github.com/mgalamo/Web-Creations" target="_blank" rel="noopener">
+          <div class="project-thumb">
+            <h3>Web Creations</h3>
+            <img src="Web Creations Logo.png" alt="Website Projects Preview">
+          </div>
+          <p>Creating and rebranding sites for women-led businesses in clothing, food, and hair care.
+             I refine the look, visuals, and flow so visitors can browse products, place orders,
+             or book services. Each project sharpens brand identity, product storytelling, and 
+             the key actions that matter for their businesses. <br><br><br><br> Tech: HTML, CSS, JavaScript</p>
+        </a>
+
+      </div><!-- /.carousel-track -->
+    </div><!-- /.carousel-viewport -->
+
+    <button class="carousel-btn next" aria-label="Next projects">›</button>
+  </div><!-- /.projects-carousel -->
+</section>
+
+<!-- Carousel JS — place this just ABOVE </body> -->
+<script>
+(() => {
+  const wrap = document.querySelector('.projects-carousel');
+  if (!wrap) return;
+
+  const viewport = wrap.querySelector('.carousel-viewport');
+  const track    = wrap.querySelector('.carousel-track');
+  const prevBtn  = wrap.querySelector('.carousel-btn.prev');
+  const nextBtn  = wrap.querySelector('.carousel-btn.next');
+
+  // distance = one card width + the track's gap
+  const step = () => {
+    const firstCard = track.querySelector('.project-card');
+    if (!firstCard) return viewport.clientWidth;
+    const cardWidth = firstCard.getBoundingClientRect().width;
+    const gap = parseFloat(getComputedStyle(track).gap || 0);
+    return cardWidth + gap;
+  };
+
+  const go = dir => viewport.scrollBy({ left: dir * step(), behavior: 'smooth' });
+
+  prevBtn.addEventListener('click', () => go(-1));
+  nextBtn.addEventListener('click', () => go( 1));
+
+  // keyboard support (optional)
+  wrap.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft')  go(-1);
+    if (e.key === 'ArrowRight') go( 1);
+  });
+})();
+</script>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-card">
+      <p class="contact-tagline">Send a note · Let’s talk · Get in touch</p>
+      <form id="contact-form" action="https://formspree.io/f/xkgzkkwn" method="POST">
+        <label for="email">Your email</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message📝... " required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-status" class="contact-status" style="display:none;">Thanks! Your message has been sent!</p>
+    </div>
+  </section>
+    <!-- Contact form handler (INSIDE body, not after) -->
+  <script>
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          form.style.display = "none";
+          status.style.display = "block";
+        } else {
+          status.textContent = "Oops! Something went wrong. Please try again.";
+          status.style.display = "block";
+        }
+      } catch (error) {
+        status.textContent = "Network error. Please try again later.";
+        status.style.display = "block";
+      }
+    });
+  </script>
+
+  <!-- Your JS -->
+  <script src="slides.js"></script>
+
+  <!-- three.js + Vanta Fog (load near end for performance) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+  <!-- Vanta initialization (burgundy theme) -->
+  <script>
+    let vantaEffect;
+    function startVanta() {
+      if (vantaEffect) vantaEffect.destroy();
+      vantaEffect = VANTA.FOG({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        highlightColor: 0xb36ab2,
+        midtoneColor: 0xab3425,
+        lowlightColor: 0x5139cc,
+        baseColor: 0x300707,
+        blurFactor: 0.62,
+        speed: 1.4,
+        zoom: 1.0
+      });
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", startVanta);
+    } else {
+      startVanta();
+    }
+    window.addEventListener("beforeunload", () => { if (vantaEffect) vantaEffect.destroy(); });
+  </script>
+  
+  <footer class="site-footer">
+  <p>© <span id="year"></span> Melodie Galamo. All rights reserved.</p>
+</footer>
+
+<script>
+  // auto-update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
+
+

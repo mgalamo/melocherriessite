@@ -1,0 +1,631 @@
+/*the scroll behavior for the website*/
+html {
+  scroll-behavior: smooth;
+}
+/* keeps section titles from tucking under the header */
+/* ensure all sections render above the fixed .hero-bg */
+section { 
+  position: relative; 
+  z-index: 1; 
+ 
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #000;
+  color: #ff4de6; /*Hot pink color*/
+  font-family: "Audiowide", sans-serif;
+  background: linear-gradient(to bottom, #c26078, #843434, #800020);
+  color: #f3efef;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* X-offset, Y-offset, blur, color */
+  padding-top: 120px;
+}
+/* about me, contact, */
+h1, h2 {
+  text-align: center;
+  color: #ff4de6; /*Hot pink color*/
+  font-family: "Audiowide", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+/* Heading links for about me, contact, projects.. etc. */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #800020; /* burgundy */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+header .header-center ul {
+  list-style: none;
+  display: flex;
+  gap: 2.0rem;   /* controls spacing between menu links */
+  margin: 0;
+  padding: 0;
+}
+
+header .header-center a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.0rem;
+  transition: color 0.3s ease;
+}
+
+header .header-center a:hover {
+  color: #d95979;
+}
+
+header .header-right a {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+}
+/*specifics for the about section: font, size, color */
+#about {
+  max-width: 1000px;
+  margin: 8rem auto 4rem;     /* top | left/right | bottom — was 4rem auto */
+  padding: 2rem;              /* keep */
+  scroll-margin-top: 140px;   /* stops under fixed header when linking */
+  display: flex; /* let inner container fill horizontally */
+  background: rgb(53, 1, 1);
+  border-left: 5px solid #ff4de6;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(201, 75, 161, 0.9);
+  color: #ffffff;
+  text-shadow: 0 0 5px #5c005c;
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Left column */
+.about-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-box {
+  background: rgba(255, 77, 230, 0.15);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(201, 75, 161, 0.6);
+}
+/* Right column */
+/* The about test about you (your bio)*/
+.about-text {
+  flex: 2; /*Controls how long or short the about me box is*/
+  font-family: "Oxanium", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; /* font used for the description*/
+  font-size: 0.95rem; /* Controls the sizing of the letters */
+  line-height: 1.7; /* Controls line spacing amongst the description */
+  text-align: justify; /* controls the paragraph arrangement*/
+}
+/* Make info boxes behave like project cards on hover */
+/* Experience, Skills, Education BOXES*/
+.info-box {
+  background: rgba(3, 35, 42, 0.991);
+  border: 1px solid #ff4de6; /*Hot pink color*/
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.info-box:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 20px #ff4de6;
+}
+/* Experience, SKills, & Education TITLE*/
+.info-box h3 {
+    font-size: 1.40rem;
+  margin-top: 0;
+  font-family: "Audiowide", sans-serif;
+  color: #ff4de6; /* Hot pink color */
+}
+
+/* Style ICONS in info box headings */
+.info-box h3 i {
+  margin-right: 10px;
+  color: #ff4de6; /* hot pink color */
+}
+
+/* Experience, SKills, & Education contents*/
+.info-box p {
+  font-size: 0.85rem;  /* Controls the font size of the contents*/
+  font-family: "Oxanium", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; /*the type of font*/
+  line-height: 1.4;   
+  text-align: center; /* centers the text under icons */
+  color: #f3efef; /*the color of the text*/     
+}
+
+
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+
+nav a {
+  color: #8d177d;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+
+section {
+  padding: 40px;
+  /* border-bottom: 1px solid #333; */
+    font-family: 'Ariel', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+  border: 2px solid #ff4de6; /* hot pink color */
+  border-radius: 10px;
+}
+
+a {
+  color: #510647;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.site-header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #bc0637b3; /* Burgundy color */
+  padding: 10px 30px;
+  flex-wrap: wrap;
+  color: white; 
+
+  /* 3D effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  border-bottom: 3px solid #d95979;
+}
+/* website name: my name */
+.site-name {
+  font-family: "Audiowide", sans-serif;
+  font-size: 2.0rem;
+  color: #ff4de6; /* hot pink color */
+  margin: 0;
+}
+
+/* social medias */
+.socials {
+  margin-top: 5px;
+}
+
+.socials a {
+  color: #ff4de6; /*hot pink color */
+  font-size: 2.3rem;
+  margin-right: 45px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+/* === fix header stacking order === */
+.vanta-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;              /* background furthest back */
+  pointer-events: none;
+}
+
+section, .hero, main {
+  position: relative;
+  z-index: 1;              /* content layer */
+}
+
+header, .site-header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 2000;           /* header always above content */
+  background: rgb(53, 1, 1);     /* solid background so text doesn't show through */
+}
+
+/* Customization of the welcome text */
+.welcome-text {
+  text-align: center;
+  color: #ff4de6; /*Hot pink color*/
+  font-family: "Audiowide", sans-serif;
+  font-size: 3rem;
+  margin-top: 80px; /* matches or slightly exceeds header height */
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+
+.hero-image {
+  position: relative;       /* positions inside the hero container */
+  top: 30px;               /* pushes image down below the header */
+  display: block;
+  margin: 0 auto;           /* centers horizontally */
+  width: 200px;             /* adjust size as needed */
+  border-radius: 50%;       /* makes it a circle */
+  border: 4px solid #ff4de6; /*Hot pink color*/
+  box-shadow: 0 0 20px rgba(255, 77, 230, 0.8);
+  z-index: 1;               /* keeps it above the video but below header */
+}
+
+.hero-flasher {
+  text-align: center;
+  color: #ff4de6; /*Hot pink color*/
+  font-family: "Audiowide", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+.hero h2 {
+  margin-top: 80px; /* pushes the "I am.." contents up or down */
+}
+
+/* Hero subtext tweaks */
+.hero-subtext {
+  text-align: center;
+  margin-top: 16px;                 /* more/less space above */
+  font-size: 1.75rem;               /* change size */
+  line-height: 1.6;                 /* readability */
+  color: #FFE3EC;                   /* new color */
+  font-family: "Oxanium", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-shadow: none;                /* remove glow (optional) */
+  max-width: 52ch;                  /* keep lines from getting too wide */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.flasher::after {
+  content: "Turning data into decisions.";
+  animation: flashWords 10s infinite;
+}
+
+@keyframes flashWords {
+  0% { content: "Merging analytics with imagination."; }
+  20% { content: "Crafting intelligent, creative solutions."; }
+  40% { content: "Data-driven. Design-minded."; }
+  60% { content: "Building smarter solutions, one line at a time."; }
+  80% { content: "Transforming ideas into impact."; }
+  100% { content: "Turning data into decisions."; }
+}
+/* Push the Projects section down & stop under fixed header when linked */
+#projects {
+  margin: 8rem auto 4rem;   /* top | left/right | bottom  (tweak the first number) */
+  scroll-margin-top: 140px; /* match your header height */
+}
+/* Project card titles only */
+#projects .project-card h3 {
+  font-family: "Audiowide", sans-serif; /* ← put the font you want here */
+  font-style: italic;
+  font-size: 1.40rem;
+  text-align: center;                 /* optional: tweak size */
+  font-weight: 900px;                    /* optional: weight */
+  text-shadow: 0 0 10px rgba(255, 77, 231, 0.781);
+  color: #ff4de6;                      /* hot pink color */
+  letter-spacing: 0.3px;               /* optional: spacing */
+  margin-bottom: 0.5rem;               /* optional: spacing to paragraph */
+  
+}
+/* Project card descriptions (only the paragraph text) */
+#projects .project-card p {
+  font-family: "Oxanium", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; /* or another font you’ve loaded */
+  font-size: 0.75rem;   /* tweak size */
+  line-height: 1.6;     /* readability */
+  letter-spacing: 0.2px;
+  color: #f3efef;       /* optional: keep theme color */
+  margin-top: 0.35rem;  /* optional: space from the title */
+}
+/* Center the whole carousel */
+#projects .projects-carousel {
+  position: relative;
+  max-width: 1100px;       /* tweak 1000–1200px to taste */
+  margin: 0 auto;          /* center on page */
+  
+}
+#projects h2 {
+   margin-bottom: 2rem; 
+  }
+/*this makes your project cards animated */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  padding: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  height: auto;
+  border: 2px solid #ff4de6; /*Hot pink color*/
+  padding: 10px;
+  border-radius: 90px; /* Adjust the circle or curves of the project cards */
+  background-clip: padding-box;
+  overflow: hidden;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 20px #39079daa;
+}
+/* WHat makes the project scroll like a carousel */
+/* === Projects carousel === */
+/* === Projects carousel === */
+.projects-carousel{
+  position: relative;
+  margin: 8rem auto 4rem;
+  scroll-margin-top: 140px;
+}
+
+.carousel-viewport{
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  scroll-padding-inline: 1rem;
+}
+.carousel-viewport::-webkit-scrollbar{ display:none; }
+
+.carousel-track{
+  display:flex;
+  gap: 40px;                 /* ← keep your existing gap */
+  padding: 1rem 2.75rem;
+}
+
+/* default set up*/
+.projects-carousel .project-card{
+  flex: 0 0 375px; /* controls width */
+  max-width: 290px; /* keeps the width in check */
+  scroll-snap-align: start;
+  background: rgb(53, 1, 1); /* the color of the cards */
+}
+
+/* arrows */
+.carousel-btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 50px; border-radius: 50%;
+  border: 2px solid #ff4de6; background: rgba(0,0,0,0.35); color: #ff4de6;
+  display: list-item; place-items: normal; cursor: pointer; z-index: 5;
+  transition: box-shadow .2s, background .2s, transform .2s;
+}
+.carousel-btn.prev { left: -100px; } /*controls arrow distance on the left*/
+.carousel-btn.next { right: -110px; } /*controls arrow distance on the right*/
+.carousel-btn:hover   { background: rgba(255,77,230,0.15); box-shadow: 0 0 14px rgba(255,77,230,.6); }
+.carousel-btn:active  { transform: translateY(-50%) scale(0.97); }
+.carousel-btn:disabled{ opacity: .4; cursor: default; box-shadow: none; }
+
+.project-card{
+  display:flex; flex-direction:column; gap:12px;
+  background: rgba(255,255,255,0.05);
+  border: 2px solid #ff4de6;
+  padding: 20px; border-radius: 36px;
+  color: #fff; text-decoration: none;
+  transition: transform .3s, box-shadow .3s;
+}
+.project-card:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 0 20px #ff4de6;
+}
+.project-card h3, .project-card p { 
+  margin: 0; 
+  text-align:center; 
+}
+
+.project-thumb{ 
+  width: 300px;; 
+  height: 275px;  
+  overflow:hidden; 
+  border-radius:16px; 
+}
+.project-thumb img{ 
+  width: 270px; 
+  height:100%; 
+  object-fit:cover;
+  transition: transform .35s; 
+  }
+.project-card:hover .project-thumb img{ 
+  transform: scale(1.03); 
+}
+
+
+
+/*contact sections*/
+/* Push the Contact section down & stop under fixed header when linked */
+#contact {
+  margin: 8rem auto 4rem;   /* top | left/right | bottom — tweak the first value */
+  scroll-margin-top: 140px; /* match your header height (so anchors stop below it) */
+}
+.contact-tagline{
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1.5rem;
+  text-align:center;
+  margin: -0.5rem 0 1rem;
+  color:#ff4de6;
+  letter-spacing:.9px;
+}
+/* Card container to match your theme */
+.contact-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+   background: rgb(53, 1, 1);
+  border: 1px solid #ff4de6; /*Hot pink color*/
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(201, 75, 161, 0.6);
+  text-shadow: 0 0 5px #5c005c;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.contact-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 0 28px rgba(255, 77, 230, 0.95);
+}
+
+/* Inputs & textarea */
+#contact-form input,
+#contact-form textarea {
+  width: 95%;
+  padding: 12px 14px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 2px solid #ff4de6; /*Hot pink color*/
+  background: rgba(3, 35, 42, 0.991);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 0 8px rgba(57, 7, 157, 0.35);
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  font-family: "Oxanium", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;             
+  letter-spacing: 1px;                   
+  color: #ff4de6;                         
+  opacity: 1;  
+  color: #d9b8ff;
+  opacity: 0.9;
+}
+
+/* Focus glow */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #d95979;
+  box-shadow: 0 0 12px rgba(255, 110, 151, 0.936);
+}
+
+/* Labels */
+#contact-form label {
+  display: block;
+  font-family: "Audiowide", sans-serif;
+  color: #ff4de6; /*Hot pink color*/
+  letter-spacing: 1px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+/* Button */
+#contact-form button {
+  font-family: "Audiowide", sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 2px solid #ff4de6;
+  background:  rgba(3, 35, 42, 0.991);
+  color: #ff4de6; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
+}
+#contact-form button:hover {
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(255, 77, 230, 0.8);
+}
+#contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Inline status message (same vibe) */
+.contact-status {
+  margin-top: 12px;
+  color: #ff4de6; /*Hot pink color*/
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-card { padding: 1.25rem; }
+}
+
+/* Success message styling */
+#form-status{
+  font-family: "Oxanium", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; 
+  font-size: 1rem;
+  color: #f8f8f8; /*Hot pink color*/  
+  background: rgba(3, 35, 42, 0.991);
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-top: 12px;
+  text-align: center;
+  animation: fadeIn .25s ease-out;
+}
+
+@keyframes fadeIn{
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}
+/*copyright*/
+.site-footer{
+  position: relative;           /* keeps it above the Vanta bg */
+  z-index: 1;
+  text-align: center;
+  padding: 16px 12px;
+  color: #ffffff;               /* your hot pink */
+  font-family: 'Oxanium', sans-serif;
+  font-size: .9rem;
+}
+
+
+
+
+.about-photo {
+  display: block;
+  max-width: 180px; /* adjust size */
+  border-radius: 100px; /* or 50% if you want it circular */
+  margin: 0 auto 1rem auto; /* center and add space below */
+  border: 3px solid #ff4de6; /*Hot pink color*/
+  box-shadow: 0 0 15px rgba(255, 77, 230, 0.6);
+}
+
+
+
+
