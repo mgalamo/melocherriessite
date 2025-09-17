@@ -587,33 +587,6 @@ header, .site-header {
   font-size: 1.05rem;
 }
 
-/* Mobile */
-@media (max-width:768px), (orientation:landscape) and (max-height:480px){
-  body{padding-top:88px}
-
-  #projects .projects-carousel{max-width:100vw;margin:0}
-  .carousel-viewport{padding:0;scroll-padding-inline:0;margin:0 auto}
-  .carousel-track{gap:8px;padding:0 8px;justify-content:flex-start}
-
-  .projects-carousel .project-card{
-    box-sizing:border-box;
-    flex:0 0 90vw !important;
-    max-width:90vw !important;
-    border-radius:24px;
-  }
-  .project-thumb{width:100%;aspect-ratio:4/3;height:auto}
-  .project-thumb img{width:100%;height:100%;object-fit:cover}
-
-  header .header-center ul{flex-wrap:wrap;gap:.6rem;justify-content:center}
-  header .header-center a{font-size:1rem}
-
-  section,#about,#projects,#contact{margin-left:auto;margin-right:auto}
-  .about-container{flex-direction:column;align-items:center}
-  .about-text{text-align:center}
-
-  .contact-card{padding:1.25rem}
-}
-
 /* Success message styling */
 #form-status{
   font-family: "Oxanium", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; 
@@ -640,6 +613,32 @@ header, .site-header {
   color: #ffffff;               /* your hot pink */
   font-family: 'Oxanium', sans-serif;
   font-size: .9rem;
+}
+/* Mobile */
+@media (max-width:768px), (orientation:landscape) and (max-height:480px){
+  body{padding-top:88px}
+
+  #projects .projects-carousel{max-width:100vw;margin:0}
+  .carousel-viewport{padding:0;scroll-padding-inline:0;margin:0 auto}
+  .carousel-track{gap:8px;padding:0 8px;justify-content:flex-start}
+
+  .projects-carousel .project-card{
+    box-sizing:border-box;
+    flex:0 0 50vw !important;
+    max-width:50vw !important;
+    border-radius:24px;
+  }
+  .project-thumb{width:100% !important; aspect-ratio:4/3; height:auto !important}
+  .project-thumb img{width:100% !important; height:100% !important; object-fit:cover}
+
+  header .header-center ul{flex-wrap:wrap;gap:.6rem;justify-content:center}
+  header .header-center a{font-size:1rem}
+
+  section,#about,#projects,#contact{margin-left:auto;margin-right:auto}
+  .about-container{flex-direction:column;align-items:center}
+  .about-text{text-align:center}
+
+  .contact-card{padding:1.25rem}
 }
 
 
