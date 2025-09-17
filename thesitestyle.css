@@ -17,7 +17,6 @@ body {
   background-color: #000;
   color: #ff4de6; /*Hot pink color*/
   font-family: "Audiowide", sans-serif;
-  background: linear-gradient(to bottom, #c26078, #843434, #800020);
   color: #f3efef;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* X-offset, Y-offset, blur, color */
   padding-top: 120px;
