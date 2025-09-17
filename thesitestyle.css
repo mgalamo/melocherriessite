@@ -163,6 +163,8 @@ header .header-right a {
   color: #f3efef; /*the color of the text*/     
 }
 
+.vanta-bg{position:fixed;inset:0;width:100vw;height:100dvh;pointer-events:none;z-index:0}
+.vanta-bg canvas{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important}
 
 
 /* Responsive: stack vertically on small screens */
