@@ -614,7 +614,6 @@ header, .site-header {
   font-size: .9rem;
 }
 /* Mobile */
-/* Mobile */
 @media (max-width:768px), (orientation:landscape) and (max-height:480px){
   body{padding-top:88px}
 
@@ -632,7 +631,7 @@ header, .site-header {
   .project-thumb img{width:100% !important; height:100% !important; object-fit:cover}
 
   header .header-center ul{flex-wrap:wrap;gap:.4rem;justify-content:center}
-  header .header-center a{font-size:1px;line-height:.85}
+  header .header-center a{font-size:.20rem;line-height:1.0rem}
 
   section,#about,#projects,#contact{margin-left:auto;margin-right:auto}
   .about-container{flex-direction:column;align-items:center}
