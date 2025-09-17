@@ -593,7 +593,7 @@ header, .site-header {
     padding-top:88px
   }
   .projects-carousel .project-card{
-    flex:0 0 85vw;max-width:85vw
+    flex:0 0 70vw;max-width:70vw
   }
   .contact-card{
     padding:1.25rem
