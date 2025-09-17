@@ -624,29 +624,29 @@ header, .site-header {
 
   .projects-carousel .project-card{
     box-sizing:border-box;
-    flex:0 0 80vw !important;
-    max-width:80vw !important;
+    flex:0 0 90vw !important;
+    max-width:90vw !important;
     border-radius:24px;
   }
-  .project-thumb{width:100% !important; aspect-ratio:4/3; height:auto !important}
-  .project-thumb img{width:100% !important; height:100% !important; object-fit:cover}
+  .project-thumb{width:100%;aspect-ratio:4/3;height:auto}
+  .project-thumb img{width:100%;height:100%;object-fit:cover}
 
-  header .header-center ul{flex-wrap:wrap;gap:.6rem;justify-content:center}
-  header .header-center a{font-size:1rem}
+  
+  .site-header{flex-direction:column;align-items:center;gap:.35rem}
+  .site-name br{display:none}
+  .site-name{font-size:1.6rem}
+  header .header-center{width:100%}
+  header .header-center ul{flex-wrap:wrap;justify-content:center;gap:.5rem;margin:0}
+  header .header-center a{font-size:.95rem}
+  
 
   section,#about,#projects,#contact{margin-left:auto;margin-right:auto}
   .about-container{flex-direction:column;align-items:center}
   .about-text{text-align:center}
 
   .contact-card{padding:1.25rem}
-  #contact-form input,
-  #contact-form textarea,
-  #contact-form button{
-    width:100%;
-    box-sizing:border-box;
 }
 
-}
 
 
 
