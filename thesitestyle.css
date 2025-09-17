@@ -163,7 +163,8 @@ header .header-right a {
   color: #f3efef; /*the color of the text*/     
 }
 
-.vanta-bg,.vanta-bg canvas{position:fixed;inset:0;width:100vw;height:100dvh;pointer-events:none;z-index:0}
+.vanta-bg,.vanta-bg canvas{position:fixed;inset:0;width:100vw;height:100dvh;pointer-events:none;z-index:0;background:#000}
+
 
 /* Responsive: stack vertically on small screens */
 @media (max-width: 768px) {
@@ -590,7 +591,7 @@ header, .site-header {
 /* Mobile */
 @media (max-width:768px), (orientation:landscape) and (max-height:480px){
   body{ padding-top:88px }
-  .projects-carousel .project-card{ flex:0 0 70vw; max-width:70vw }
+  .projects-carousel .project-card{ flex:0 0 50vw; max-width:50vw }
   .contact-card{ padding:1.25rem }
   .project-thumb{ width:100%; aspect-ratio:4/3; height:auto; }
   .project-thumb img{ width:100%; height:100%; object-fit:cover; }
