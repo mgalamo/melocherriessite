@@ -597,8 +597,8 @@ header, .site-header {
 
   .projects-carousel .project-card{
     box-sizing:border-box;
-    flex:0 0 calc(100vw - 16px) !important;
-    max-width:calc(100vw - 16px) !important;
+    flex:0 0 90vw !important;
+    max-width:90vw !important;
     border-radius:24px;
   }
   .project-thumb{width:100%;aspect-ratio:4/3;height:auto}
@@ -613,10 +613,6 @@ header, .site-header {
 
   .contact-card{padding:1.25rem}
 }
-
-
-
-
 
 /* Success message styling */
 #form-status{
