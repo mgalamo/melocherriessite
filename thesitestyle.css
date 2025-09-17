@@ -194,6 +194,7 @@ section {
 
 img {
   width: 200px;
+  height: auto;
   margin: 10px;
   border: 2px solid #ff4de6; /* hot pink color */
   border-radius: 10px;
@@ -587,9 +588,19 @@ header, .site-header {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  .contact-card { padding: 1.25rem; }
+@media (max-width:768px){
+  body{
+    padding-top:88px
+  }
+  .projects-carousel .project-card{
+    flex:0 0 85vw;max-width:85vw
+  }
+  .contact-card{
+    padding:1.25rem
+  }
 }
+
+
 
 /* Success message styling */
 #form-status{
